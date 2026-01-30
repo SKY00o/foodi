@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie - Fast & Delicious Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Food<span>ie</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search food...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="cart-icon" id="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Fastest <span>Food Delivery</span> in Your City</h1>
+                    <p>Order your favorite meals from the best restaurants and enjoy them hot and fresh at your doorstep.</p>
+                    <div class="hero-btns">
+                        <a href="#menu" class="btn btn-primary">Order Now</a>
+                        <a href="#" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Delicious Food">
+                </div>
+            </div>
+        </section>
+
+        <section class="categories container">
+            <div class="category-card" data-category="pizza">
+                <i class="fas fa-pizza-slice"></i>
+                <span>Pizza</span>
+            </div>
+            <div class="category-card" data-category="burger">
+                <i class="fas fa-hamburger"></i>
+                <span>Burger</span>
+            </div>
+            <div class="category-card" data-category="sushi">
+                <i class="fas fa-fish"></i>
+                <span>Sushi</span>
+            </div>
+            <div class="category-card" data-category="dessert">
+                <i class="fas fa-ice-cream"></i>
+                <span>Dessert</span>
+            </div>
+            <div class="category-card" data-category="drinks">
+                <i class="fas fa-glass-martini-alt"></i>
+                <span>Drinks</span>
+            </div>
+        </section>
+
+        <section id="menu" class="menu container">
+            <div class="section-header">
+                <h2>Our Popular <span>Menu</span></h2>
+                <div class="filter-btns">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="pizza">Pizza</button>
+                    <button class="filter-btn" data-filter="burger">Burger</button>
+                    <button class="filter-btn" data-filter="sushi">Sushi</button>
+                </div>
+            </div>
+            <div class="menu-grid" id="menu-container">
+                <!-- Menu items will be injected by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <aside class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <i class="fas fa-times" id="close-cart"></i>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be injected by JavaScript -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-amount">₹0.00</span>
+            </div>
+            <button class="btn btn-primary checkout-btn">Checkout</button>
+        </div>
+    </aside>
+
+    <div class="overlay" id="overlay"></div>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-info">
+                <div class="logo">Food<span>ie</span></div>
+                <p>Delivering happiness to your door since 2023.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                <p><i class="fas fa-envelope"></i> info@foodie.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Foodie. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
